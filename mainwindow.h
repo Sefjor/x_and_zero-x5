@@ -6,6 +6,7 @@
 #include <QGraphicsView>
 #include <array>
 #include "cell.h"
+#include "field_size.h"
 namespace Ui {
   class MainWindow;
 }
@@ -21,7 +22,7 @@ public:
 private:
   Ui::MainWindow *ui;
   QGraphicsScene scene;
-  std::array<std::array<Cell*, 10>, 10> matrix;
+  std::array<std::array<Cell*, field_size_x>, field_size_y> matrix;
 };
 
 #endif // MAINWINDOW_H

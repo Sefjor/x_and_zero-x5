@@ -6,8 +6,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
   ui->setupUi(this);
   ui->graphics->setScene(&scene);
-  for (int i = 0; i < 10; ++i)
-    for (int j = 0; j < 10; ++j)
+  for (unsigned int i = 0; i < matrix.size(); ++i)
+    for (unsigned int j = 0; j < matrix[0].size(); ++j)
       {
         Cell* cell = new Cell(i, j);
         matrix[i][j] = cell;

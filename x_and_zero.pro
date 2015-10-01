@@ -15,10 +15,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    cell.cpp
+    cell.cpp \
+    field.cpp \
+    ai.cpp
 
 HEADERS  += mainwindow.h \
     cell.h \
-    figure_enum_class.h
+    figure_enum_class.h \
+    field_size.h \
+    field.h \
+    ai.h
 
 FORMS    += mainwindow.ui
